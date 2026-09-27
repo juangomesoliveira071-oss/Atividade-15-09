@@ -32,6 +32,18 @@ public class atividade10 {
         // 6. n3 é o maior E n2 é o menor
         boolean sit6 = (n3 > n1 && n3 > n2) && (n2 < n1 && n2 < n3);
 
+        // 7. n1 ser igual an2
+        boolean sit7 = (n1 == n2);
+
+        // 8. n1 ser igual an3
+        boolean sit8 = (n1 == n3);
+
+        // 9. n3 ser igual an2
+        boolean sit9 = (n3 == n2);
+
+        boolean sit10 = ((n3 == n2) && (n3 == n1));
+
+
         if (sit1 == true) {
             System.out.print(n1 + " é maior e " + n2 + " é menor");
         }
@@ -49,6 +61,18 @@ public class atividade10 {
         }
         else if (sit6 == true) {
             System.out.print(n3 + " é maior e " + n2 + " é menor");
+        }
+        else if (sit10 == true) {
+            System.out.print("Os três números são iguais!");
+        }
+        else if (sit7 == true) {
+            System.out.print("O primeiro e o segundo número são iguais!");
+        }
+        else if (sit8 == true) {
+            System.out.print("O primeiro e o terceiro número são iguais!");
+        }
+        else if (sit9 == true) {
+            System.out.print("O terceiro e o segundo número são iguais!");
         }
 
     }
